@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      body{
+        font-family: poppins black;
+      }
+      .card{
+border: 0.5px solid rgb(214, 202, 202);
+border-left: transparent;
+border-right: transparent;
+border-bottom: transparent;
+      }
+      .card:hover{
+        border: 2px solid rgb(255, 255, 255);
+      }
+      li a{
+        text-decoration: none;
+        
+      }
+      li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: rgb(113, 113, 113);
+        margin: auto;
+        display: block  ;
+      }
+      li a:hover::after{
+        width: 100%;
+        transition: width 0.3s linear;
+      }
+      .hone{
+        font-weight: bolder;
+      }
+    </style>
+</head>
+<body>
+
+ <nav class="navbar p-fixed sticky-top navbar-expand-lg navbar-light bg-white " style="background-color: rgb(244, 233, 223);">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="#"><img src="images\download (1).png" alt="" height="70vh"></a> -->
+    <a class="navbar-brand" href="#">MOONENTERPRICES</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li>
+        <a class="nav-link " href="#" >
+          HOME
+        </a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link sub-menu nav-dropdown nav-dropdown-default dropdown-uppercase "  href="#">RESOURCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sub-menu nav-dropdown nav-dropdown-default dropdown-uppercase "  href="#">FEATURES</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ourservices" tabindex="-1" aria-disabled="true">OUR SERVICES</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          
+          <a class="nav-link" aria-expanded="false">
+            GALLERY
+          </a>
+      
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRICING
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+        <a class="nav-link" href="#contactus" tabindex="-1" aria-disabled="true">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+
+
+
+
+    
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleDark"  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+<img src="images\1.png" class="d-block w-100 "style="height:90vh;" alt="...">
+
+<div class="carousel-caption d-none d-md-block  ">
+  <h1 style="color : rgb(255, 255, 255); font-size: 12vh;  ">MOON ENTERPRISES BEST KNITTING IN PAKISTAN </h1>
+  <!-- <p>Some representative placeholder content for the first slide.</p> -->
+</div>  
+
+      </div>
+      
+      <div class="carousel-item bg-gradient">
+        <img src="images\Circular-knitting-machine.JPG" class="d-block w-100" style="height: 90vh;" alt="...">
+
+        <div class="carousel-caption d-none d-md-block  ">
+    <h2 style="color : rgb(255, 255, 255); font-size: 10vh; translate: 10px; font-weight: bolder;   ">GIVE THREAD AND     GET FABRIC THAT  TOO CUSTOM</h2>
+          <h3> Best Knitting Machines in Each Category.</h3>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="images\mayer-knitting-machine-500x500.webp" class="d-block w-100" style="height:90vh;"alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color : rgb(255, 255, 255); font-size: 15vh;translate: -60px;  ">Moon Enterprises</h1>
+          <h3>A Trusty Name On <br> Knittings By Thread For Fabric
+          </h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden" id="ourservices">Next</span>
+      
+    </button>
+
+
+
+  </div>
+     <br><br>
+<!-- <div class="container"> -->
+<center><h1 class="hone" >OUR SERVICES</h1></center>
+  <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+    <div class="col">
+      <div class="card ">
+        <img src="images\download (4).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <center> <h5 class="card-title">KNITTING</h5></center>
+          <center>   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p></center>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card"  >
+        <img src="images\download (1).jpg" class="card-img-top" height="235px">
+        <!-- <div class="card-body"> -->
+         <center> <h5 class="card-title">STITCHING</h5></center>
+       <center>   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p></center>
+        <!-- </div> -->
+        <!-- <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div> -->
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images\images (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <center> <h5 class="card-title">Card title</h5></center>
+          <center>   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p></center>
+        </div>
+        <!-- <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<center><h1 class="hone" >PORTFOLIO</h1></center>
+
+<div class="row" id="portfolio">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="images\images (1).jpg" alt="" width="100%">
+        <center><h2 class="card-title">NEW FABRIC KNITTING SETUP   </h2></center>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-dark">  Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="images\download (4).jpg" width="100%" alt="">
+        <center><h2 class="card-title">NEW FABRIC KNITTING SETUP   </h2></center>
+        <center>  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></center>
+        <a href="#" class="btn btn-dark">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="images\pailung-single-jersey-knitting-machines-500x500.webp" alt="" width="100%">
+        <center><h2 class="card-title">NEW FABRIC KNITTING SETUP   </h2></center>
+      <center>  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></center>
+        <a href="#" class="btn btn-dark">  Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="images\download (4).jpg" width="100%" alt="">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-dark">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<center><h1 class="hone" >CONTACT US</h1></center>
+<div class="card bg-dark text-white">
+  <img src="images\images (2).jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <form>
+      <div class="mb-3" id="contactus">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address" style=" background-color: transparent; color: black;border: 2px solid black;width: 40vh;">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div> -->
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1"placeholder="Enter Email Address" style=" background-color: transparent; color: black;border: 2px solid black;width: 40vh;">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form></div>
+</div>
+
+
+
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src=" images\download (6).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+       -->
+</body>
+</html>
